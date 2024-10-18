@@ -1,0 +1,16 @@
+{
+  "name": "@smar/figma-generate",
+  "version": "0.0.0",
+  "author": "shakuro team",
+  "private": true,
+  "scripts": {
+    "generate:styles": "node src/generate-styles.js",
+    "generate:icons": "node src/generate-icons.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "lodash.camelcase": "^4.3.0",
+    "shelljs": "^0.8.4",
+    "svg-sprite-generator": "^0.0.7"
+  }
+}

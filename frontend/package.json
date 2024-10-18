@@ -1,0 +1,53 @@
+{
+  "name": "smart-forming-frontend",
+  "version": "1.0.0",
+  "author": "shakuro team",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "app",
+    "app-legacy",
+    "figma-generate",
+    "landing",
+    "ui"
+  ],
+  "scripts": {
+    "dev": "yarn --cwd app dev",
+    "dev:landing": "yarn --cwd landing dev",
+    "build": "yarn --cwd app build",
+    "build:landing": "yarn --cwd landing build",
+    "start": "yarn --cwd app start",
+    "start:landing": "yarn --cwd landing start",
+    "analyze": "BUNDLE_ANALYZE=browser yarn --cwd app next build",
+    "analyze:landing": "BUNDLE_ANALYZE=browser yarn --cwd landing next build",
+    "lint": "next lint",
+    "generate:styles": "yarn --cwd figma-generate generate:styles",
+    "generate:icons": "yarn --cwd figma-generate generate:icons"
+  },
+  "dependencies": {
+    "@react-query-firebase/firestore": "^1.0.0-dev.7",
+    "firebase": "^10.13.2",
+    "prettier-plugin-tailwind": "^2.2.12",
+    "sass": "^1.79.3",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/mapbox__point-geometry": "^0.1.4",
+    "@types/mapbox__vector-tile": "^1.3.4",
+    "@types/parse-json": "^4.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^8.50.0",
+    "eslint-config-next": "^14.2.14",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "prettier": "^3.3.3"
+  },
+  "volta": {
+    "node": "21.1.0",
+    "yarn": "1.22.10"
+  }
+}
