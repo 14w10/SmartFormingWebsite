@@ -1,0 +1,7 @@
+{
+  "title": "List of signups",
+  "type": "array",
+  "items": {
+    "$ref": "signup.json"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Portfolio modules details",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": ["array", "null"]
+    },
+    "cover": {
+      "type": ["object", "null"]
+    },
+    "computationModulesArray": {
+      "type": ["object"]
+    },
+    "rejectReason": {
+      "type": ["string", "null"]
+    },
+    "rejectedAt": {
+      "type": ["string", "null"]
+    },
+    "reviewStartedAt": {
+      "type": ["string", "null"]
+    },
+    "publishedAt": {
+      "type": ["string", "null"]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "description",
+    "status",
+    "rejectReason",
+    "rejectedAt",
+    "reviewStartedAt",
+    "publishedAt",
+    "computationModulesArray",
+    "createdAt",
+    "updatedAt"
+  ],
+  "additionalProperties": false
+}

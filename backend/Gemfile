@@ -1,0 +1,132 @@
+# source 'https://rubygems.org'
+# git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+# ruby '3.3.5'
+
+# # Common
+# gem 'aasm'
+# # gem 'active_model_serializers', '0.10.1'
+# gem 'active_model_serializers', '~> 0.10.14'
+# gem 'aws-sdk-s3', '~> 1.2'
+# gem 'bootsnap', '>= 1.1.0', require: false
+# gem 'devise', '>= 4.6.0'
+# gem 'fast_jsonapi'
+# gem 'json-schema'
+# gem 'openssl'
+# # gem 'rails', '~> 5.2.0'
+# gem 'rails', '~> 7.2', '>= 7.2.1'
+# gem 'rack-cors'
+# gem 'kaminari'
+# gem 'pg', '>= 0.18', '< 2.0'
+# gem 'puma', '~> 3.11'
+# gem 'shrine', '~> 3.3'
+# gem 'mime-types', '~> 3.1'
+# gem "fastimage", "~> 2.2"
+# gem "image_processing", "~> 1.12"
+# gem 'simple_token_authentication', '~> 1.0'
+# gem 'clowne', '~> 1.2'
+# gem 'rubyzip', '~> 2.3'
+
+# # Dry
+# # gem 'dry-auto_inject'
+# gem 'dry-auto_inject', '~> 1.0', '>= 1.0.1'
+# # gem 'dry-validation', '0.13.1'
+# gem 'dry-validation', '~> 1.10'
+# gem 'dry-container', '~> 0.11.0'
+# gem 'json_schemer', '~> 2.3'
+
+# # Mails
+# gem 'sass-rails', '~> 5.0'
+# gem 'slim-rails', '3.1.1'
+
+# # Error
+# # gem 'rollbar'
+# gem 'newrelic_rpm'
+
+# # group :development, :test do
+# #   gem 'bundler-audit', require: false
+# #   gem 'database_cleaner', '1.4.1'
+# #   gem 'dotenv-rails', '2.5.0', require: 'dotenv/rails-now'
+# #   gem 'i18n-tasks', '~> 0.9.29', require: false
+# #   gem 'letter_opener'
+# #   gem 'listen', '>= 3.0.5', '< 3.2'
+# #   gem 'pry-byebug', '~> 3.3'
+# #   gem 'pry-doc'
+# #   gem 'pry-rails'
+# #   gem 'rspec-rails', '~> 3.4'
+# #   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.1'
+# #   gem 'rubocop', '0.74.0', require: false
+# #   gem 'shoulda-matchers', '4.4.1'
+# #   gem 'spring'
+# #   gem 'spring-watcher-listen', '~> 2.0.0'
+# #   gem 'webmock', '~> 3.11'
+# # end
+
+# group :staging, :test, :development do
+#   gem 'factory_bot_rails'
+#   gem 'faker'
+# end
+
+source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby '2.5.5'
+
+# Common
+gem 'aasm'
+gem 'active_model_serializers', '0.10.1'
+gem 'aws-sdk-s3', '~> 1.2'
+gem 'bootsnap', '>= 1.1.0', require: false
+gem 'devise', '>= 4.6.0'
+gem 'fast_jsonapi'
+gem 'json-schema'
+gem 'openssl'
+gem 'rails', '~> 5.2.0'
+gem 'rack-cors'
+gem 'kaminari'
+gem 'pg', '>= 0.18', '< 2.0'
+gem 'puma', '~> 3.11'
+gem 'shrine', '~> 3.3'
+gem 'mime-types', '~> 3.1'
+gem "fastimage", "~> 2.2"
+gem "image_processing", "~> 1.12"
+gem 'simple_token_authentication', '~> 1.0'
+gem 'clowne', '~> 1.2'
+gem 'rubyzip', '~> 2.3'
+
+# Dry
+gem 'dry-auto_inject'
+gem 'dry-validation', '0.13.1'
+gem 'json_schemer', '0.2.13'
+
+# Mails
+gem 'sass-rails', '~> 5.0'
+gem 'slim-rails', '3.1.1'
+
+# Error
+# gem 'rollbar'
+gem 'newrelic_rpm'
+
+group :development, :test do
+  gem 'bundler-audit', require: false
+  gem 'database_cleaner', '1.4.1'
+  gem 'dotenv-rails', '2.5.0', require: 'dotenv/rails-now'
+  gem 'i18n-tasks', '~> 0.9.29', require: false
+  gem 'letter_opener'
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'pry-byebug', '~> 3.3'
+  gem 'pry-doc'
+  gem 'pry-rails'
+  gem 'rspec-rails', '~> 3.4'
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.1'
+  gem 'rubocop', '0.74.0', require: false
+  gem 'shoulda-matchers', '4.4.1'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'webmock', '~> 3.11'
+end
+
+group :staging, :test, :development do
+  gem 'factory_bot_rails'
+  gem 'faker'
+end

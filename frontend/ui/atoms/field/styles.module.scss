@@ -1,0 +1,20 @@
+.root {
+  transition: .2s;
+  background: var(--secondaryDarkBlue940);
+  border: 1px solid transparent;
+  border-radius: 24px;
+  color:  var(--secondaryDarkBlue920);
+  font-size: 14px;
+  min-height: 48px;
+  width: 100%;
+  padding: 12px 20px;
+
+  &:focus {
+    border: 1px solid var(--primaryBlue910);
+    color:  var(--secondaryDarkBlue900);
+  }
+
+  &:hover {
+    background: var(--primaryBlue930);
+  }
+}

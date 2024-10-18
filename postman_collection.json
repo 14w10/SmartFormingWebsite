@@ -1,0 +1,1698 @@
+{
+	"info": {
+		"_postman_id": "5b1894d7-d5eb-4ae9-a7c9-40d5257e437f",
+		"name": "SamrtForming",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "signups",
+					"item": [
+						{
+							"name": "api/admin/signups#index",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/admin/signups?per=7&page=1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"signups"
+									],
+									"query": [
+										{
+											"key": "per",
+											"value": "7"
+										},
+										{
+											"key": "page",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admin/signups#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/signups/7",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"signups",
+										"7"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admin/signup#update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"signup\": {\n        \"status\": \"approve\"\n    }\n}"
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/signups/7",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"signups",
+										"7"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "users",
+					"item": [
+						{
+							"name": "api/admin/users#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/users",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"users"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "admins",
+					"item": [
+						{
+							"name": "api/admin/admins#index",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/admin/admins",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"admins"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "editors",
+					"item": [
+						{
+							"name": "api/admin/editors#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/editors",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"editors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admin/admins#create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"admin\": {\n        \"firstName\": \"First\",\n        \"lastName\": \"Last\",\n        \"email\": \"emai2l@email.admins\"\n    }\n}"
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/admins",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"admins"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "computation_modules",
+					"item": [
+						{
+							"name": "api/computation_modules#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/computation_modules?category_id=2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"computation_modules"
+									],
+									"query": [
+										{
+											"key": "category_id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/computation_modules#create Copy",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"computation_module\": {\n\t\t\"title\": \"title1\",\n\t\t\"description\": \"description\",\n\t\t\"author_id\": 4\n\t}\n}\n"
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/computation_modules",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"computation_modules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/computation_modules#update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"computation_module\": {\n\t\t\"title\": \"updat\",\n\t\t\"description\": \"description\",\n\t\t\"status\": \"reject\",\n\t\t\"reject_reason\": \"reject\"\n\t}\n}\n"
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/computation_modules/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"computation_modules",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/computation_modules#show Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/computation_modules/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"computation_modules",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "portfolio_modules",
+					"item": [
+						{
+							"name": "api/portfolio_modules#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/portfolio_modules",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"portfolio_modules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/portfolio_modules#create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"portfolio_module\": {\n\t\t\"title\": \"title\",\n\t\t\"description\": \"description\",\n\t\t\"author_id\": 4,\n\t\t\"attachments_attributes\": [\n\t\t\t{\n\t\t\t\t\"fileType\": \"verificationPortfolioReport\",\n\t\t\t\t\"file\": {\n\t\t\t\t     \"id\": \"096d0f73813b924db30170ae2371f338\", \n\t\t             \"storage\":\"cache\",\n\t\t             \"metadata\": { \n                       \"size \":78874,\n                       \"filename\":\"0.pdf\",\n                       \"mime_type\":\"application/pdf\"\n\t                 }\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"fileType\": \"verifiedPortfolioModule\",\n\t\t\t\t\"file\": {\n\t\t\t\t     \"id\": \"096d0f73813b924db30170ae2371f338\", \n\t\t             \"storage\":\"cache\",\n\t\t             \"metadata\": { \n                       \"size \":78874,\n                       \"filename\":\"0.zip\",\n                       \"mime_type\":\"application/pdf\"\n\t                 }\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}\n}\n"
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/portfolio_modules",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"portfolio_modules"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/portfolio_modules#update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"portfolio_module\": {\n\t\t\"title\": \"updat\",\n\t\t\"description\": \"description\",\n\t\t\"status\": \"reject\",\n\t\t\"reject_reason\": \"reject\"\n\t}\n}\n"
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/portfolio_modules/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"portfolio_modules",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/portfolio_modules#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/portfolio_modules/2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"portfolio_modules",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "computation_form",
+					"item": [
+						{
+							"name": "api/forms/builders#create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n   \"form\":{\n   \t  \"computation_module_id\": 31,\n      \"steps\":[ \n         { \n            \"$id\": \"12313\",\n            \"$schema\":\"http://json-schema.org/draft-07/schema#\",\n            \"type\":\"object\",\n            \"title\":\"Step 1\",\n            \"description\":\"form description\",\n            \"required\":[ \n               \"firstName\",\n               \"lastName\",\n               \"age\"\n            ],\n            \"properties\":{ \n               \"firstName\":{ \n                  \"default\":\"Vasia\",\n                  \"description\":\"First name.\",\n                  \"minLength\":1,\n                  \"type\":\"string\"\n               },\n               \"lastName\":{ \n                  \"description\":\"Last name.\",\n                  \"minLength\":1,\n                  \"type\":\"string\"\n               },\n               \"age\":{ \n                  \"description\":\"Age.\",\n                  \"minimum\":18,\n                  \"type\":\"integer\"\n               }\n            }\n         }\n      ],\n\t  \"files\": [\n\t  \t{\n\t  \t\t\"label\": \"label\",\n\t  \t\t\"fieldName\": \"fileName\"\n\t  \t}\n\t  ]\n   }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/forms/builders",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"forms",
+										"builders"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admin/forms/builders#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/forms/builders/4",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"forms",
+										"builders",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "localhost:3000/api/forms/builders/3",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{ \n   \"form\":{\n      \"steps\":[ \n         { \n            \"$id\":12313,\n            \"$schema\":\"http://json-schema.org/draft-07/schema#\",\n            \"type\":\"object\",\n            \"title\":\"Step 1\",\n            \"description\":\"form description\",\n            \"required\":[ \n               \"firstName\",\n               \"lastName\",\n               \"age\"\n            ],\n            \"properties\":{ \n               \"firstName\":{ \n                  \"default\":\"Vasia\",\n                  \"description\":\"First name.\",\n                  \"minLength\":1,\n                  \"type\":\"string\"\n               },\n               \"lastName\":{ \n                  \"description\":\"Last name.\",\n                  \"minLength\":1,\n                  \"type\":\"string\"\n               },\n               \"age\":{ \n                  \"description\":\"Age.\",\n                  \"minimum\":18,\n                  \"type\":\"integer\"\n               }\n            }\n         }\n      ]\n   }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/forms/builders/3",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"forms",
+										"builders",
+										"3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "computation_requests",
+					"item": [
+						{
+							"name": "api/admin/computation_requests#index",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/computation_requests/21",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"computation_requests",
+										"21"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admin/computation_requests#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/computation_requests/16.csv",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"computation_requests",
+										"16.csv"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admin/computation_requests#update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"computation_request\": {\n\t\t\"status\": \"finished\",\n\t\t\"attachments_attributes\": [\n\t\t\t{\n\t\t\t\t\"fileType\": \"computationRequestResult\",\n\t\t\t\t\"file\": {\n\t\t\t\t     \"id\": \"0.pdf\", \n\t\t             \"storage\": \"cache\",\n\t\t             \"metadata\": { \n                       \"size \": 78874,\n                       \"filename\": \"0.pdf\",\n                       \"mime_type\": \"application/pdf\"\n\t                 }\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/computation_requests/18",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"computation_requests",
+										"18"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "portfolio_requests",
+					"item": [
+						{
+							"name": "api/admin/portfolio_requests#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/portfolio_requests",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"portfolio_requests"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admin/portfolio_requests#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/portfolio_requests/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"portfolio_requests",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/admin/portfolio_requests#update",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"portfolio_request\": {\n\t\t\"status\": \"declined\",\n\t\t\"declineReason\": \"Fuck of\"\n\t}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/portfolio_requests/2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"portfolio_requests",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "categories",
+					"item": [
+						{
+							"name": "api/categories#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/categories#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/categories/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"categories",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/categories#delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/admin/categories/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"categories",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/categories#create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category\": {\n      \"name\": \"Other\",\n      \"icon\": null\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/categories#update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"category\": {\n      \"name\": \"Other1\",\n      \"icon\": null\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/admin/categories/2",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"admin",
+										"categories",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "api/users/sessions#create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"user\": {\n   \t\"email\": \"super@admin.sf\",\n    \"password\": \"12345678\"\n   }\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/sessions",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/passwords#create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"user\": {\n   \t\"email\": \"email@email.email\"\n   }\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/passwords",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"passwords"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/passwords",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"user\": {\n\t\t\"password\": \"12345678\",\n\t\t\"password_confirmation\": \"1234567\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/passwords?reset_password_token=token",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"passwords"
+							],
+							"query": [
+								{
+									"key": "reset_password_token",
+									"value": "token"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/sesions#destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/sessions",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"sessions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "computation_modules",
+			"item": [
+				{
+					"name": "api/computation_modules#index Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/computation_modules",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"computation_modules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/computation_modules#create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"computation_module\": {\n\t\t\"title\": \"s3-test-33asd\",\n\t\t\"description\": \"description\",\n\t\t\"author_id\": 4,\n\t\t\"attachments_attributes\": [\n\t\t\t{\n\t\t\t\t\"fileType\": \"verificationReport\",\n\t\t\t\t\"file\": {\n\t\t\t\t     \"id\": \"096d0f73813b924db30170ae2371f338\", \n\t\t             \"storage\":\"cache\",\n\t\t             \"metadata\": { \n                       \"size \":78874,\n                       \"filename\":\"0.pdf\",\n                       \"mime_type\":\"application/pdf\"\n\t                 }\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/computation_modules",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"computation_modules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/computation_modules#update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"computation_module\": {\n\t\t\"title\": \"update title\",\n\t\t\"description\": \"description\"\n\t}\n}\n"
+						},
+						"url": {
+							"raw": "localhost:3000/api/computation_modules/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"computation_modules",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/computation_modules#show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/computation_modules/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"computation_modules",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "portfolio_modules",
+			"item": [
+				{
+					"name": "api/portfolio_modules#index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/portfolio_modules",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"portfolio_modules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/portfolio_modules#create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"portfolio_module\": {\n\t\t\"title\": \"title\",\n\t\t\"description\": \"description\",\n\t\t\"author_id\": 4,\n\t\t\"attachments_attributes\": [\n\t\t\t{\n\t\t\t\t\"fileType\": \"verificationPortfolioReport\",\n\t\t\t\t\"file\": {\n\t\t\t\t     \"id\": \"47cec2380b06d91d6b2897d5e756f195\", \n\t\t             \"storage\":\"cache\",\n\t\t             \"metadata\": { \n                       \"size \":78874,\n                       \"filename\":\"0.pdf\",\n                       \"mime_type\":\"application/pdf\"\n\t                 }\n\t\t\t\t}\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"fileType\": \"verifiedPortfolioModule\",\n\t\t\t\t\"file\": {\n\t\t\t\t     \"id\": \"47cec2380b06d91d6b2897d5e756f195\", \n\t\t             \"storage\":\"cache\",\n\t\t             \"metadata\": { \n                       \"size \":78874,\n                       \"filename\":\"0.zip\",\n                       \"mime_type\":\"application/pdf\"\n\t                 }\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}\n}\n"
+						},
+						"url": {
+							"raw": "localhost:3000/api/portfolio_modules",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"portfolio_modules"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/portfolio_modules#update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"portfolio_module\": {\n\t\t\"title\": \"update title\",\n\t\t\"description\": \"description\"\n\t}\n}\n"
+						},
+						"url": {
+							"raw": "localhost:3000/api/portfolio_modules/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"portfolio_modules",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/portfolio_modules#show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/portfolio_modules/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"portfolio_modules",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "signups",
+			"item": [
+				{
+					"name": "step_validations",
+					"item": [
+						{
+							"name": "api/signups/step_validations#create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"signup\": {\n        \"title\": \"mr\",\n        \"firstName\": \"First\",\n        \"lastName\": \"Last\",\n        \"phoneNumber\": \"+79991112233\",\n        \"email\": \"email@emai1l.email\",\n        \"password\": \"12345678\",\n        \"passwordConfirmation\": \"12345678\"\n    }\n}"
+								},
+								"url": {
+									"raw": "localhost:3000/api/signups/step_validations",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"signups",
+										"step_validations"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "api/signups#create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"signup\": {\n        \"title\": \"mr\",\n        \"firstName\": \"First\",\n        \"lastName\": \"Last\",\n        \"phoneNumber\": \"+79991112233\",\n        \"email\": \"email@email.email\",\n        \"password\": \"12345678\",\n        \"passwordConfirmation\": \"12345678\",\n        \"role\": \"role\",\n        \"position\": \"position\",\n        \"organizationName\": \"organizationName\",\n        \"organizationAddress\": \"organizationAddress\",\n        \"organizationPostcode\": \"organizationPostcode\",\n        \"organizationCountry\": \"organizationCountry\",\n        \"organizationBusiness\": \"organizationBusiness\",\n\n        \"website\": null,\n        \"linkedin\": null,\n        \"researchGate\": null,\n        \"otherLink\": null\n    }\n}"
+						},
+						"url": {
+							"raw": "localhost:3000/api/signups",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"signups"
+							],
+							"query": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "uploads",
+			"item": [
+				{
+					"name": "localhost:3000/api/uploads/presign?fileName=file_name&type=file_type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/uploads/presign?fileName=file_name&type=file_type",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"uploads",
+								"presign"
+							],
+							"query": [
+								{
+									"key": "fileName",
+									"value": "file_name"
+								},
+								{
+									"key": "type",
+									"value": "file_type"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:3000/api/uploads/attachments",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"attachment\": {\n\t\t\"attachableId\": 7,\n\t\t\"attachableType\": \"computationModule\",\n\t\t\"fileType\": \"verificationReport\",\n\t\t\"fileData\": {\n\t\t\t\"ids\": [1]\n\t\t}\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/uploads/attachments",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"uploads",
+								"attachments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "store",
+			"item": [
+				{
+					"name": "computation_modules",
+					"item": [
+						{
+							"name": "api/store/computation_modules",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/store/computation_modules/10",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"store",
+										"computation_modules",
+										"10"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/store/computation_modules#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/store/computation_modules?category_id=1&on_main_page=true",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"store",
+										"computation_modules"
+									],
+									"query": [
+										{
+											"key": "category_id",
+											"value": "1"
+										},
+										{
+											"key": "on_main_page",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "computation_forms",
+					"item": [
+						{
+							"name": "api/store/computation_forms#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/store/computation_forms/4",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"store",
+										"computation_forms",
+										"4"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "computation_requests",
+					"item": [
+						{
+							"name": "api/store/computation_request#create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"computation_request\": {\n\t\t\"author_id\": 4,\n\t\t\"computation_form_id\": 7,\n\t\t\"steps\": [\n\t\t\t{\n\t\t\t  \"lastName\": {\n\t\t\t  \t\"value\":\"12\",\n\t\t\t  \t\"label\": \"lastName\"\n\t\t\t  },\n\t\t\t  \"firstName\": {\n\t\t\t  \t\"value\": \"asd\",\n\t\t\t  \t\"label\": \"firstName\"\n\t\t\t  },\n\t\t\t  \"age\": {\n\t\t\t  \t\"value\": 19,\n\t\t\t  \t\"label\": \"age\"\n\t\t\t  }\n\t\t\t}\n\t\t],\n\t\t\"attachments_attributes\": [\n\t\t\t{\n\t\t\t\t\"label\": \"label\",\n\t\t\t\t\"description\": \"description\",\n\t\t\t\t\"fieldName\": \"fieldName\",\n\t\t\t\t\"fileType\": \"computationRequestData\",\n\t\t\t\t\"file\": {\n\t\t\t\t     \"id\": \"0.pdf\", \n\t\t             \"storage\":\"cache\",\n\t\t             \"metadata\": { \n                       \"size \": 78874,\n                       \"filename\":\"0.pdf\",\n                       \"mime_type\":\"application/pdf\"\n\t                 }\n\t\t\t\t}\n\t\t\t}\n\t\t]\n\t}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/store/computation_requests",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"store",
+										"computation_requests"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/store/computation_rquests#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/store/computation_requests/18",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"store",
+										"computation_requests",
+										"18"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "portfolio_requests",
+					"item": [
+						{
+							"name": "api/store/portfolio_requests#create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"portfolio_request\": {\n\t\t\"portfolio_module_id\": 2,\n\t\t\"author_id\": 4\n\t}\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/store/portfolio_requests",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"store",
+										"portfolio_requests"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "categories",
+					"item": [
+						{
+							"name": "api/categories#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/categories",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/categories#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/categories/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"categories",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "forms",
+			"item": [
+				{
+					"name": "api/forms/validations#create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"validation\": {\n\t\t\"step_id\": 0,\n\t\t\"computation_form_id\": 4,\n\t\t\"data\": {\n\t\t  \"lastName\": \"12\",\n\t\t  \"firstName\": \"asd\",\n\t\t  \"age\": 18\n\t\t}\n\t}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/forms/validations",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"forms",
+								"validations"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "portfolio_requests",
+					"item": [
+						{
+							"name": "api/orders/portfolio_requests#index",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/orders/portfolio_requests",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"orders",
+										"portfolio_requests"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "api/orders/portfolio_requests#show",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/api/orders/portfolio_requests/1",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"orders",
+										"portfolio_requests",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "computation_requests",
+			"item": [
+				{
+					"name": "api/orders/computation_requests#show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/orders/computation_requests/18",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"orders",
+								"computation_requests",
+								"18"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/orders/computation_requests#index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/orders/computation_requests",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"orders",
+								"computation_requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

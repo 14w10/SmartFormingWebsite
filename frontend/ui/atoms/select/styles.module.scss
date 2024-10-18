@@ -1,0 +1,152 @@
+@mixin selectBase {
+  position: relative;
+  width: 100%;
+  font-family: var(--fonts-secondary);
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.7143;
+  letter-spacing: 0.05em;
+  height: 48px;
+  align-items: center;
+  border-radius: 24px;
+  display: inline-flex;
+  transition: 0.2s ease-in;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.default {
+  @include selectBase;
+  color: var(--secondaryDarkBlue920);
+  background: var(--secondaryDarkBlue940);
+
+  &:hover {
+    background: var(--primaryBlue930);
+  }
+
+  &:focus {
+    color: var(--secondaryDarkBlue900);
+    border: 1px solid var(--primaryBlue910);
+  }
+
+  &:disabled {
+    // color: rgba(var(--secondaryDarkBlue920), 0.5);
+    color: rgba(155, 169, 183, 0.5);
+  }
+}
+
+.noBorderLight {
+  @include selectBase;
+
+  color: var(--secondaryDarkBlue921);
+  background: var(--white);
+
+  &:hover {
+    color: var(--primaryBlue900);
+  }
+
+  &:focus {
+    color: var(--secondaryDarkBlue910);
+  }
+
+  &:disabled {
+    color: var(--secondaryDarkBlue921);
+  }
+
+  &:not(:placeholder-shown) {
+    color: var(--secondaryDarkBlue910);
+  }
+}
+
+.light {
+  @include selectBase;
+  border: 1px solid var(--primaryBlue930);
+
+  color: var(--secondaryDarkBlue921);
+  background: var(--white);
+
+  &:hover {
+    border: 1px solid var(--secondaryDarkBlue930);
+  }
+
+  &:focus {
+    color: var(--secondaryDarkBlue910);
+    border: 1px solid var(--primaryBlue910);
+  }
+
+  &:disabled {
+    color: var(--secondaryDarkBlue921);
+  }
+
+  &:not(:placeholder-shown) {
+    color: var(--secondaryDarkBlue910);
+  }
+}
+
+.current {
+  position: relative;
+  display: flex;
+  padding: 12px 16px;
+  width: 100%;
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon {
+  position: absolute;
+  right: 16px;
+}
+
+@mixin listBase {
+  position: absolute;
+  z-index: 9;
+  top: 100%;
+  width: calc(100% + 2px);
+  left: -1px;
+  border: 1px solid transparent;
+  list-style: none;
+  border-radius: 24px;
+  overflow: auto;
+  margin-top: 4px;
+  max-height: 184px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.defaultList {
+  @include listBase;
+  background: var(--secondaryDarkBlue940);
+}
+.lightList {
+  @include listBase;
+  background: var(--white);
+  box-shadow: var(--shadow3);
+}
+.noBorderLightList {
+  @include listBase;
+  background: var(--white);
+  box-shadow: var(--shadow3);
+}
+
+.listClosed {
+  display: none;
+}
+
+.listItem {
+  padding: 12px 16px;
+}
+
+.ListItemSelected {
+  color: var(--primaryBlue900);
+}
+
+.ListItemHighlighted {
+  background: var(--primaryBlue900);
+  color: var(--white);
+}

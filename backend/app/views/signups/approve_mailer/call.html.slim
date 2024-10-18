@@ -1,0 +1,10 @@
+tr
+  td style='color: rgb(51, 51, 51); font-size: 20px; line-height: 24px; padding-top: 3px; text-align: center;' We approved your signup request!
+tr
+  td style="color: #545454; font-size: 16px; padding: 12px 30px 12px 30px;"
+    p style="color: #333333; font-size: 18px; padding: 16px 20px 16px 20px;"
+      = "Hello, #{@signup.first_name}!"
+    p style="color: #545454; font-size: 16px; padding: 0 20px 16px 20px;"
+      | We approved your signup request to Smart Forming. You can now use your credentials to&nbsp;
+      a.daria-goto-anchor href="#{sign_in_url}" rel='noopener noreferrer' style='margin: 0 auto 0 auto; max-width: 200px; text-transform: capitalize; width: 100%;' target='_blank' Sign In
+      |.

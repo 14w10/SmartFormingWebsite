@@ -1,0 +1,81 @@
+{
+  "title": "Computation module details",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "moduleType": {
+      "type": "string"
+    },
+    "moduleContentType": {
+      "type": "string"
+    },
+    "shortDescription": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "computationFormId": {
+      "type": ["integer", "null"]
+    },
+    "rejectReason": {
+      "type": ["string", "null"]
+    },
+    "keywords": {
+      "type": ["array", "null"]
+    },
+    "cover": {
+      "type": ["object", "null"]
+    },
+    "approvedAt": {
+      "type": ["string", "null"]
+    },
+    "onMainPage": {
+      "type": ["boolean", "null"]
+    },
+    "categoryId": {
+      "type": ["integer", "null"]
+    },
+    "rejectedAt": {
+      "type": ["string", "null"]
+    },
+    "reviewStartedAt": {
+      "type": ["string", "null"]
+    },
+    "publishedAt": {
+      "type": ["string", "null"]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "uid": {
+      "type": ["string", "null"]
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "shortDescription",
+    "description",
+    "status",
+    "moduleType",
+    "rejectReason",
+    "approvedAt",
+    "rejectedAt",
+    "reviewStartedAt",
+    "publishedAt",
+    "createdAt",
+    "updatedAt"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Attahcment details",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "attachableId": {
+      "type": "integer"
+    },
+    "attachableType": {
+      "type": "string"
+    },
+    "fileData": {
+      "type": "object"
+    },
+    "fileType": {
+      "type": "string"
+    },
+    "fileUrl": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "attachableId",
+    "attachableType",
+    "fileData",
+    "fileType",
+    "fileUrl",
+    "createdAt",
+    "updatedAt"
+  ],
+  "additionalProperties": false
+}

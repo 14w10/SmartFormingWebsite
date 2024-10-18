@@ -1,0 +1,24 @@
+.root {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.header {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.reviewDateWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.ratingReviewerWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}

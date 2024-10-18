@@ -1,0 +1,7 @@
+{
+    "title": "List of categories",
+    "type": "array",
+    "items": {
+      "$ref": "category.json"
+    }
+  }

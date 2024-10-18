@@ -1,0 +1,19 @@
+.featuresItem {
+  min-width: calc(100% / 9 * 3);
+  width: 280px;
+  margin-right: 24px;
+}
+
+.featuresAttachment {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--secondaryDarkBlue930);
+  border-radius: 24px;
+  padding: 12px 16px;
+  justify-content: space-between;
+}
+
+.featuresIconText {
+  display: flex;
+  align-items: center;
+}

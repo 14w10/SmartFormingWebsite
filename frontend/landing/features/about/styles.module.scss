@@ -1,0 +1,133 @@
+.root {
+  width: 100%;
+  margin-top: 50px;
+  position: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.tumb {
+  position: relative;
+}
+
+.clouds {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-height: 91%;
+  max-height: 100vh;
+}
+
+.aboutBlock {
+  padding-top: 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  max-width: 920px;
+  align-items: flex-start;
+}
+
+.label {
+  font-family: var(--fonts-primary);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--primaryBlue900);
+  background: var(--primaryBlue920);
+  padding: 5px 16px 3px 16px;
+  display: inline-flex;
+  border-radius: 24px;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--fonts-primary);
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--secondaryDarkBlue900);
+  margin-bottom: 24px;
+}
+
+.description {
+  color: var(--secondaryDarkBlue920);
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.expertiseBlock {
+  padding-top: 80px;
+  padding-bottom: 110px;
+  background: var(--white);
+}
+
+.visionBlock {
+  position: relative;
+  padding: 0 120px;
+  padding-top: 196px;
+  overflow: hidden;
+  padding-bottom: 190px;
+}
+
+.visionClouds {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-height: 91%;
+}
+
+.visionTextWrap {
+  max-width: 920px;
+  margin-bottom: 192px;
+  margin-left: auto;
+}
+
+.subscribeBlock {
+  background: var(--white);
+  border-radius: 48px;
+  box-shadow: 0px 16px 40px rgba(20, 38, 70, 0.08);
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1328px;
+  padding: 48px;
+}
+
+.subscribeBlockText {
+  flex: 1;
+  padding-right: 32px;
+
+  h4 {
+    color: var(--secondaryDarkBlue900);
+    font-family: var(--fonts-primary);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2;
+    color: var(--secondaryDarkBlue910);
+  }
+}
+
+.subscribeBlockField {
+  flex: 1;
+  display: flex;
+  align-self: center;
+
+  form {
+    display: flex;
+    width: 100%;
+  }
+}

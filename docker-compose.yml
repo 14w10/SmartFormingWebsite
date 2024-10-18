@@ -1,0 +1,126 @@
+version: '3'
+services:
+  db:
+    image: postgres:11-alpine
+    container_name: ${PROJECT_NAME}_db
+    restart: always
+    networks:
+      project:
+        aliases:
+          - postgres
+    environment:
+      - POSTGRES_HOST=${DB_HOST}
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}        
+    env_file:
+      - ./.env
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  # mysql:
+  #   image: mysql:5.7
+  #   container_name: ${PROJECT_NAME}_mysql
+  #   restart: unless-stopped
+  #   tty: true
+  #   ports:
+  #     - "3306:3306"
+  #   environment:
+  #     - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+  #     - MYSQL_DATABASE=${MYSQL_DATABASE}
+  #     - MYSQL_USER=${MYSQL_USER}
+  #     - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+  #   volumes:
+  #     - ms_data:/var/lib/mysql
+  #   networks:
+  #     project:
+  #       aliases:
+  #         - mysql
+
+  admin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: unless-stopped
+    networks:
+      project:
+        aliases:
+          - phpmyadmin
+    environment:
+      - SERVICE_NAME=phpmyadmin
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - PMA_HOST=mysql
+    ports:
+      - 3333:80
+
+  redis:
+    image: redis:alpine
+    container_name: ${PROJECT_NAME}_redis
+    restart: always
+    networks:
+      project:
+        aliases:
+          - redis
+
+#   backend:
+#     build: ./backend
+#     image: ${PROJECT_HUB}/backend:${IMAGE_TAG}
+#     container_name: ${PROJECT_NAME}_backend
+#     restart: always
+#     networks:
+#       project:
+#         aliases:
+#           - backend
+#     working_dir: /opt/app
+#     env_file:
+#       - ./.env
+#     command: bash -c "rails db:migrate && rake db:seed && bundle exec puma -b tcp://0.0.0.0:3000 -e ${RAILS_ENV} -C /opt/app/config/puma.rb"
+# #    command: sh -c "while true; do sleep 1; done"
+#     depends_on:
+#       - db
+#       - redis
+#     ports:
+#       - 3000:3000
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: App.Dockerfile
+    image: ${PROJECT_HUB}/frontend:${IMAGE_TAG}
+    container_name: ${PROJECT_NAME}_frontend
+    restart: always
+    ports:
+      - 3003:3003
+    env_file:
+      - ./.env      
+    networks:
+      project:
+        aliases:
+          - frontend
+
+  # frontend_landing:
+  #   build:
+  #     context: ./frontend/
+  #     dockerfile: Landing.Dockerfile
+  #   image: ${PROJECT_HUB}/frontend_landing:${IMAGE_TAG}
+  #   container_name: ${PROJECT_NAME}_frontend_landing
+  #   restart: always
+  #   # command: sh -c "while true; do sleep 1; done"
+  #   command: sh -c "yarn start:landing"
+  #   ports:
+  #     - 3002:3002
+  #   networks:
+  #     project:
+  #       aliases:
+  #         - frontend
+
+volumes:
+  pg_data:
+  ms_data:
+
+networks:
+  project:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.21.0/24

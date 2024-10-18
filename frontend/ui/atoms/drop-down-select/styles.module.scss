@@ -1,0 +1,115 @@
+@mixin verticalCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin bg {
+  box-shadow: var(--shadow3);
+  background: var(--white);
+  border-radius: 16px;
+  overflow-y: auto;
+}
+
+@mixin listItemHover {
+  &:hover {
+    background: var(--primaryBlue900);
+    color: var(--white);
+
+    svg {
+      fill: var(--white);
+    }
+
+    * {
+      color: var(--white);
+    }
+  }
+}
+
+.root {
+  position: relative;
+  user-select: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapperBg {
+  @include bg;
+}
+
+.list {
+  @include bg;
+  position: absolute;
+  max-height: 182px;
+  top: 100%;
+  margin-top: 4px;
+  width: max-content;
+  right: 0px;
+  list-style-type: none;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.listSeparate {
+  @include bg;
+  margin-top: 0;
+  top: 0;
+}
+
+.listReversed {
+  top: auto;
+  bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.listClosed {
+  display: none;
+}
+
+.listItem {
+  @include verticalCenter;
+  @include listItemHover;
+  cursor: pointer;
+  padding: 4px 14px;
+  transition: background ease-in-out 0.2s, color ease-in-out 0.2s;
+
+  &:hover {
+    background: var(--primaryBlue900);
+    color: var(--white);
+
+    svg {
+      fill: var(--white);
+    }
+  }
+
+  > * {
+    width: 100%;
+  }
+}
+
+.listItemSelected {
+  color: var(--primaryBlue900);
+  // padding: 4px 6px 4px 12px;
+}
+
+.current {
+  @include verticalCenter;
+  padding: 4px 6px 4px 12px;
+  cursor: pointer;
+}
+
+.currentHover {
+  @include listItemHover;
+}
+
+.noPadding {
+  padding: 0;
+}

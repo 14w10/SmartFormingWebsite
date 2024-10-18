@@ -1,0 +1,47 @@
+model:
+  materials:
+    blank:
+      name: AA6082
+      parameters: null
+      temperature: 450
+      thickness: 1.5
+    coating:
+      name: CrN
+      parameters: null
+      thickness: null
+    lubricant:
+      name: Omega 35
+      parameters: null
+      thickness: null
+    tool:
+      name: H13
+      parameters: null
+      temperature: null
+  name: exp
+  process_parameters:
+    artificial_ageing_temp: 180
+    artificial_ageing_time: 7200
+    blank_temperature: null
+    blank_thickness: null
+    cut_off_strain: 0.3
+    evaluation_stage: 48
+    stamping_speed: null
+    time_quench: null
+    total_stroke: null
+  stages:
+    forming:
+      data_files:
+      - data: null
+        name: exp_variables.npz
+      shortcode: D-20
+      stamping_speed: 450
+      total_stroke: 350
+    quenching:
+      data_files:
+      - data: null
+        name: exp_quenching.npz
+      shortcode: D-30
+      time_quench: 10
+run_specifications:
+  create_file: true
+  target_directory: data

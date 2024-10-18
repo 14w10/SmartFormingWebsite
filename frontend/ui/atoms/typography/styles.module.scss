@@ -1,0 +1,153 @@
+@mixin hBase {
+  color: var(--secondaryDarkBlue900, #323f5a);
+  font-family: var(--fonts-primary);
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+@mixin subBase {
+  color: var(--secondaryDarkBlue910, #7b859f);
+  font-family: var(--fonts-secondary);
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin buttonBase {
+  font-family: var(--fonts-primary);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 0;
+}
+
+.h800 {
+  @include hBase;
+  font-size: clamp(48px, 4.2vw, 80px);
+  line-height: 1.1;
+}
+
+.h600 {
+  @include hBase;
+  font-size: clamp(32px, 3.75vw, 64px);
+  line-height: 1.125;
+}
+
+.h400 {
+  @include hBase;
+  font-size: clamp(28px, 2.5vw, 48px);
+  line-height: 1.3333;
+}
+
+.h300 {
+  @include hBase;
+  font-weight: 500;
+  font-size: clamp(24px, 1.6667vw, 32px);
+  line-height: 1.5;
+}
+
+.h200 {
+  @include hBase;
+  font-weight: 500;
+  font-size: clamp(20px, 1.25vw, 24px);
+  line-height: 1.3333;
+}
+
+.h170 {
+  @include hBase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.h160 {
+  @include hBase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.h150 {
+  @include hBase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.sub300 {
+  @include subBase;
+  font-size: clamp(24px, 1.6667vw, 32px);
+  line-height: 1.75;
+}
+
+.sub200 {
+  @include subBase;
+  font-size: clamp(20px, 1.25vw, 24px);
+  line-height: 2;
+}
+
+// * text150 === label150
+.text150 {
+  font-family: var(--fonts-secondary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondaryDarkBlue900);
+  letter-spacing: 0.05em;
+}
+
+// * text110 === label110
+.text110 {
+  font-family: var(--fonts-primary);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--secondaryDarkBlue920);
+  text-transform: uppercase;
+}
+
+.text130 {
+  @include subBase;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.7143;
+  letter-spacing: 0.05em;
+}
+
+.p130 {
+  @include subBase;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.7143;
+  letter-spacing: 0.05em;
+}
+
+.label120 {
+  @include hBase;
+  font-size: 12px;
+  line-height: 1.71;
+  text-transform: uppercase;
+}
+
+.label140 {
+  @include subBase;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.7143;
+}
+
+.button120 {
+  @include buttonBase;
+  font-size: 12px;
+  line-height: 2;
+}
+
+.button160 {
+  @include buttonBase;
+  font-size: 16px;
+  line-height: 1.5;
+}

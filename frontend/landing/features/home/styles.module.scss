@@ -1,0 +1,37 @@
+.screen {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: clamp(64px, 12.7778vh, 137px) 24px;
+  position: relative;
+  z-index: 9;
+}
+
+.dots {
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+}
+
+.btn {
+  align-items: center;
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: var(--primaryBlue900);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: var(--fonts-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  transition: 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+}

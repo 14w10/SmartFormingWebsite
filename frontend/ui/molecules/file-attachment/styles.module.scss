@@ -1,0 +1,49 @@
+.attachedFile {
+  position: relative;
+  max-width: 100%;
+  width: 370px;
+  background: var(--primaryBlue940);
+  border: 1px solid var(--primaryBlue920);
+  border-radius: 24px;
+  padding: 12px 16px;
+}
+
+.attachedFileIconText {
+  display: flex;
+  align-items: center;
+}
+
+.progress {
+  background: var(--white);
+  border-radius: 24px;
+  height: calc(100% - 8px);
+  left: 4px;
+  min-width: 48px;
+  position: absolute;
+  top: 4px;
+  width: 48px;
+}
+
+.innerWrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconTextWrapper {
+  display: flex;
+  align-items: center;
+  max-width: calc(100% - 24px);
+}
+
+.progressIcon {
+  display: inline-flex;
+  height: 24px;
+  width: 24px;
+}
+
+.deleteIcon {
+  cursor: pointer;
+}

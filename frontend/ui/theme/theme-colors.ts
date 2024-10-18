@@ -1,0 +1,45 @@
+export const colors = {
+  primaryBlue900: '#4781e8',
+  primaryBlue910: '#a3c0f4',
+  primaryBlue920: '#d1e0fa',
+  primaryBlue930: '#e8f0fd',
+  primaryBlue940: '#f4f8fe',
+  secondaryDarkBlue900: '#323f5a',
+  secondaryDarkBlue910: '#7b859f',
+  secondaryDarkBlue920: '#9ba4b7',
+  secondaryDarkBlue930: '#e2e6f0',
+  secondaryDarkBlue921: '#cdd2db',
+  secondaryDarkBlue940: '#eff2f9',
+  secondaryDarkBlue950: '#f7f8fa',
+  white: '#ffffff',
+  auxiliaryRed900: '#FF6363',
+  auxiliaryRed940: '#F9EFEF',
+  auxiliaryGreen900: '#6FBE0B',
+  auxiliaryGreen940: '#F0F9E5',
+  auxiliaryCyan900: '#00C3DE',
+  auxiliaryCyan940: '#E3FAFD',
+  auxiliaryYellow900: '#FFC907',
+};
+export type ColorsType =
+  | 'primaryBlue900'
+  | 'primaryBlue910'
+  | 'primaryBlue920'
+  | 'primaryBlue930'
+  | 'primaryBlue940'
+  | 'secondaryDarkBlue900'
+  | 'secondaryDarkBlue910'
+  | 'secondaryDarkBlue920'
+  | 'secondaryDarkBlue930'
+  | 'secondaryDarkBlue921'
+  | 'secondaryDarkBlue940'
+  | 'secondaryDarkBlue950'
+  | 'white'
+  | 'auxiliaryRed900'
+  | 'auxiliaryRed940'
+  | 'auxiliaryGreen900'
+  | 'auxiliaryGreen940'
+  | 'auxiliaryCyan900'
+  | 'auxiliaryCyan940'
+  | 'auxiliaryYellow'
+  | 'secondaryDarkBlue'
+  | 'darkBlue910';

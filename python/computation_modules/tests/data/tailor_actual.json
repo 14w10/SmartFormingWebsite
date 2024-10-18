@@ -1,0 +1,172 @@
+[
+    "Blanking",
+    {
+        "Material": [
+            [
+                "Select Blank Material",
+                "AA6082"
+            ],
+            [
+                "Length (m)",
+                1
+            ],
+            [
+                "Width (m)",
+                1
+            ],
+            [
+                "Thickness (mm)",
+                1.5
+            ]
+        ]
+    },
+    "Heating",
+    {
+        "Heating method": [
+            [
+                "Heating technology",
+                "Convective heating"
+            ],
+            [
+                "Heating rate (degrees celcius per second)",
+                5
+            ],
+            [
+                "Soaking temperature (Celcius)",
+                400
+            ],
+            [
+                "Soaking time (minutes)",
+                60
+            ]
+        ]
+    },
+    "Transfer 1",
+    {
+        "Approximate transfer parameters": [
+            [
+                "Time on air (seconds)",
+                5
+            ],
+            [
+                "Room temperature",
+                22
+            ]
+        ]
+    },
+    "Press",
+    {
+        "Define PL conditions": [
+            [
+                "Workpiece material",
+                "AA2060"
+            ],
+            [
+                "Initial coating thickness (mm)",
+                1
+            ],
+            [
+                "Lubricant",
+                "Boron nitride"
+            ],
+            [
+                "Select die materal",
+                "P20"
+            ],
+            [
+                "Stamping speed (mm/s)",
+                450
+            ],
+            [
+                "Stroke (mm)",
+                350
+            ],
+            [
+                "Surface roughness (micro m)",
+                1
+            ],
+            [
+                "Lubricant density (g per mm squared)",
+                1
+            ]
+        ]
+    },
+    "Transfer 2",
+    {
+        "Approximate transfer parameters": [
+            [
+                "Time on air (seconds)",
+                5
+            ],
+            [
+                "Room temperature (celcius)",
+                22
+            ]
+        ]
+    },
+    "Paint Bake ",
+    {
+        "Paint bake cycles": [
+            [
+                "Heating rate (degrees celcius per second)",
+                5
+            ],
+            [
+                "Soaking temperature (Celcius)",
+                180
+            ],
+            [
+                "Soaking time (minutes)",
+                120
+            ],
+            [
+                "Heating rate (degrees celcius per second)",
+                5
+            ],
+            [
+                "Soaking temperature (Celcius)",
+                400
+            ],
+            [
+                "Soaking time (minutes)",
+                60
+            ],
+            [
+                "Heating rate (degrees celcius per second)",
+                5
+            ],
+            [
+                "Soaking temperature (Celcius)",
+                400
+            ],
+            [
+                "Soaking time (minutes)",
+                60
+            ],
+            [
+                "Heating rate (degrees celcius per second)",
+                5
+            ],
+            [
+                "Soaking temperature (Celcius)",
+                400
+            ],
+            [
+                "Soaking time (minutes)",
+                60
+            ],
+            [
+                "Heating rate (degrees celcius per second)",
+                5
+            ],
+            [
+                "Soaking temperature (Celcius)",
+                400
+            ],
+            [
+                "Soaking time (minutes)",
+                60
+            ]
+        ]
+    }
+]

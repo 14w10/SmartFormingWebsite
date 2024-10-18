@@ -1,0 +1,52 @@
+{
+  "title": "Portfolio request details",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "declineReason": {
+      "type": ["string", "null"]
+    },
+    "portfolioModuleId": {
+      "type": ["integer", "null"]
+    },
+    "description": {
+      "type": ["string", "null"]
+    },
+    "title": {
+      "type": ["string", "null"]
+    },
+    "approvedAt": {
+      "type": ["string", "null"]
+    },
+    "declinedAt": {
+      "type": ["string", "null"]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "status",
+    "declineReason",
+    "portfolioModuleId",
+    "description",
+    "title",
+    "approvedAt",
+    "declinedAt",
+    "createdAt",
+    "updatedAt",
+    "meta"
+  ],
+  "additionalProperties": false
+}

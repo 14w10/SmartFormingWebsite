@@ -1,0 +1,7 @@
+{
+  "title": "List of admins",
+  "type": "array",
+  "items": {
+    "$ref": "admin.json"
+  }
+}

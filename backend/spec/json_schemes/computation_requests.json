@@ -1,0 +1,7 @@
+{
+  "title": "List of computation_requests",
+  "type": "array",
+  "items": {
+    "$ref": "computation_request.json"
+  }
+}

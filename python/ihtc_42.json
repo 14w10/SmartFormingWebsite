@@ -1,0 +1,82 @@
+[
+   "Blank",
+   {
+      "AA6082":[
+         [
+            "Thermal conductivity (at 490°), kW/mK",
+            0.17
+         ],
+         [
+            "Ultimate tensile strength (at 490°C), MPa",
+            36
+         ],
+         [
+            "Blank thickness, mm",
+            1.5
+         ],
+         [
+            "Density (at 490°C), kg/m3",
+            2700
+         ],
+         [
+            "Specific heat capacity (at 490°C), J/kgK",
+            890
+         ],
+         [
+            "Average surface roughness (Ra), nm",
+            4.3e-7
+         ],
+         [
+            "Forming temperature (initial blank temp.), °C",
+            450
+         ]
+      ]
+   },
+   "Tool",
+   {
+      "H13":[
+         [
+            "Hardness (Optional), HRC",
+            52
+         ],
+         [
+            "Average surface roughness (Ra), nm",
+            9.8e-7
+         ],
+         [
+            "Initial forming temperature (Optional), °C",
+            573
+         ],
+         [
+            "Thermal conductivity, kW/mK",
+            0.0244
+         ]
+      ]
+   },
+   "Lubricant",
+   {
+      "Omega 35":[
+         [
+            "Layer thickness, μm",
+            1.5e-5
+         ],
+         [
+            "Thermal conductivity, kW/mK",
+            0.024
+         ]
+      ]
+   },
+   "Coating",
+   {
+      "CrN":[
+         [
+            "Layer thickness, μm",
+            3e-6
+         ],
+         [
+            "Thermal conductivity, kW/mK",
+            0.012
+         ]
+      ]
+   }
+]

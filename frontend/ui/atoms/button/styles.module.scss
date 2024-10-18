@@ -1,0 +1,174 @@
+@mixin buttonBase {
+  align-items: center;
+  appearance: none;
+  background: transparent;
+  border-radius: 120px;
+  border: none;
+  display: inline-flex;
+  font-family: var(--fonts-primary);
+  font-size: 12px;
+  font-weight: 500;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  padding: 0 16px;
+  padding-top: 2px;
+  line-height: 1.1;
+  text-transform: uppercase;
+  // height: auto;
+  // max-width: 100%;
+  transition: 0.2s ease-in;
+  outline: none;
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.xsm {
+  height: 24px;
+}
+
+.xs {
+  height: 32px;
+}
+
+.sm {
+  height: 40px;
+}
+
+.md {
+  height: 48px;
+}
+
+.solid {
+  @include buttonBase;
+
+  background: var(--primaryBlue900);
+  color: #fff;
+
+  &:hover {
+    background: #6c9aed;
+  }
+
+  &:active,
+  &:focus {
+    background: #3e71cc;
+  }
+
+  &:disabled {
+    background: var(--primaryBlue910);
+  }
+}
+
+.solidRed {
+  @include buttonBase;
+
+  background: var(--auxiliaryRed900);
+  color: #fff;
+
+  &:hover {
+    background: #cd5858;
+  }
+
+  &:active,
+  &:focus {
+    background: #cd5858;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    background: var(--auxiliaryRed900);
+  }
+}
+
+.outlined {
+  @include buttonBase;
+  color: var(--primaryBlue900);
+  border: 1px solid var(--primaryBlue910);
+
+  &:hover {
+    border-color: var(--primaryBlue900);
+  }
+
+  &:active,
+  &:focus {
+    background: var(--primaryBlue940);
+    border-color: var(--primaryBlue900);
+  }
+
+  &:disabled {
+    color: var(--primaryBlue920);
+    border-color: var(--primaryBlue920);
+  }
+}
+
+.link {
+  @include buttonBase;
+  color: var(--primaryBlue900);
+  border: 1px solid transparent;
+
+  &:hover {
+    border-color: var(--primaryBlue900);
+  }
+
+  &:active,
+  &:focus {
+    background: var(--primaryBlue940);
+    border-color: var(--primaryBlue900);
+  }
+
+  &:disabled {
+    color: var(--primaryBlue920);
+    border-color: 1px solid var(--primaryBlue920);
+  }
+}
+
+.linkRed {
+  @include buttonBase;
+  color: var(--auxiliaryRed900);
+  border: 1px solid transparent;
+
+  &:hover {
+    border-color: var(--auxiliaryRed900);
+  }
+
+  &:disabled {
+    color: var(--primaryBlue920);
+    border-color: 1px solid var(--primaryBlue920);
+  }
+}
+
+.underlined {
+  @include buttonBase;
+  color: var(--primaryBlue900);
+  border-radius: 0;
+  padding: 0;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-color: var(--primaryBlue920);
+  }
+
+  &:active,
+  &:focus {
+    border-color: var(--primaryBlue900);
+  }
+
+  &:disabled {
+    color: var(--primaryBlue920);
+    border-bottom: 2px solid transparent;
+  }
+}
+
+.icon {
+  @include buttonBase;
+  padding: 0;
+  height: auto;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

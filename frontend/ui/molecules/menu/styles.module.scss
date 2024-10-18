@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  background: var(--white);
+  box-shadow: var(--shadow2);
+  border-radius: 100px;
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.accountLink {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.dropDownItem {
+  display: flex;
+  padding: 12px;
+  flex-grow: 1;
+
+  > * {
+    color: inherit;
+  }
+}
+
+.dropDownItemFirst {
+  padding-right: 0;
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Form  details",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "attributes": {
+      "type": "object"
+    },
+    "type": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "attributes",
+    "type"
+  ],
+  "additionalProperties": false
+}

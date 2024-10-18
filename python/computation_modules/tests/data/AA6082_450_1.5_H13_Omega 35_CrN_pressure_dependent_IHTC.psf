@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PressureDependentScalingFactors>
+
+  <PressureDependentScalingFactor Pressure="0" ScalingFactor="0.44"/>
+
+  <PressureDependentScalingFactor Pressure="5" ScalingFactor="0.63"/>
+
+  <PressureDependentScalingFactor Pressure="10" ScalingFactor="0.75"/>
+
+  <PressureDependentScalingFactor Pressure="20" ScalingFactor="0.89"/>
+
+  <PressureDependentScalingFactor Pressure="30" ScalingFactor="0.95"/>
+
+  <PressureDependentScalingFactor Pressure="40" ScalingFactor="0.98"/>
+
+  <PressureDependentScalingFactor Pressure="50" ScalingFactor="0.99"/>
+
+  <PressureDependentScalingFactor Pressure="60" ScalingFactor="1.00"/>
+
+</PressureDependentScalingFactors>

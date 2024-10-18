@@ -1,0 +1,16 @@
+{
+  "title": "Computation request result",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "meta": {
+      "type": ["object"]
+    }
+  },
+  "required": [
+    "id",
+    "meta"
+  ],
+  "additionalProperties": false
+}

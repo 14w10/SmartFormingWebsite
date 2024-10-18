@@ -1,0 +1,48 @@
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  @apply fixed w-full h-full overflow-hidden;
+
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  &:empty {
+    display: none;
+  }
+}
+
+.underlay {
+  @apply fixed w-full h-full;
+
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+  background: rgba(8, 14, 26, 0.5);
+  animation: fadeOut 0.15s ease-in-out forwards;
+}
+
+.contentContainer {
+  @apply absolute w-full h-full  overflow-y-auto;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  @apply items-center flex justify-center;
+
+  min-height: 100vh;
+  animation: fadeOut 0.3s ease-in-out forwards;
+
+  > * {
+    max-width: 100%;
+  }
+}

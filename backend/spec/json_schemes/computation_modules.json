@@ -1,0 +1,7 @@
+{
+  "title": "List of computation_modules",
+  "type": "array",
+  "items": {
+    "$ref": "computation_module.json"
+  }
+}

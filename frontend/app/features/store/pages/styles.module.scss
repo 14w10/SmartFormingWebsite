@@ -1,0 +1,61 @@
+.searchWrap {
+  position: relative;
+  display: flex;
+  margin-bottom: 32px;
+  justify-content: space-between;
+  align-items: center;
+  // * fix clicking on search label causing selection of other elements
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.listPaginationWrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.searchResultsNotFound {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.moduleInformation {
+  margin-bottom: 24px;
+}
+
+.moduleDescription {
+  margin-bottom: 24px;
+}
+
+.layout {
+  display: flex;
+}
+
+.wideColumn {
+  width: calc(100% / 12 * 9);
+  margin-right: 16px;
+}
+
+.narrowColumn {
+  width: calc(100% / 12 * 3);
+  margin-left: 16px;
+}
+
+.computationCard {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.computationButton {
+  display: inline-flex;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  padding: 12px !important;
+}

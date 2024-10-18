@@ -1,0 +1,31 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    [
+      "babel-plugin-styled-components",
+      {
+        "ssr": true,
+        "displayName": true,
+        "pure": true
+      }
+    ]
+  ],
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "styled-components",
+          {
+            "displayName": false,
+            "minify": true,
+            "pure": true,
+            "ssr": true,
+            "transpileTemplateLiterals": true
+          }
+        ]
+      ]
+    }
+  }
+}

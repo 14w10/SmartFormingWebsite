@@ -1,0 +1,57 @@
+.root {
+  padding: 0 !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.imgWrapper {
+  background: var(--secondaryDarkBlue921);
+  border-radius: 24px 24px 24px 0px;
+  font-size: 0;
+  overflow: hidden;
+  padding-bottom: 47.5676%;
+  position: relative;
+  width: 100%;
+}
+
+.img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.contentWrapper {
+  padding: 20px 24px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.textWrapper {
+  margin-bottom: 8px;
+}
+
+.counters {
+  display: flex;
+  align-items: center;
+}
+
+.counter {
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.counterIcon {
+  margin-right: 8px;
+}

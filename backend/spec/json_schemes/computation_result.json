@@ -1,0 +1,49 @@
+{
+  "title": "Computation result details",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "typ": {
+      "type": ["string", "null"]
+    },
+    "x": {
+      "type": ["string", "null"]
+    },
+    "y": {
+      "type": ["string", "null"]
+    },
+    "z": {
+      "type": ["string", "null"]
+    },
+    "data": {
+      "type": ["object"]
+    },
+    "parameters": {
+      "type": ["array"]
+    },
+    "link": {
+      "type": ["string", "null"]
+    },
+    "resultUrl": {
+      "type": ["string", "null"]
+    },
+    "fileData": {
+      "type": ["string", "null"]
+    },
+    "axis": {
+      "type": ["array"]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "data"
+  ],
+  "additionalProperties": false
+}

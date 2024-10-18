@@ -1,0 +1,7 @@
+{
+  "title": "List of forms",
+  "type": "array",
+  "items": {
+    "$ref": "form.json"
+  }
+}

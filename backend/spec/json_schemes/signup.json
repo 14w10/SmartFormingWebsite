@@ -1,0 +1,93 @@
+{
+  "title": "Signup details",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": ["string", "integer"]
+    },
+    "title": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "organizationName": {
+      "type": "string"
+    },
+    "organizationAddress": {
+      "type": "string"
+    },
+    "organizationPostcode": {
+      "type": "string"
+    },
+    "organizationCountry": {
+      "type": "string"
+    },
+    "organizationBusiness": {
+      "type": "string"
+    },
+    "website": {
+      "type": ["string", "null"]
+    },
+    "linkedin": {
+      "type": ["string", "null"]
+    },
+    "researchGate": {
+      "type": ["string", "null"]
+    },
+    "otherLink":{
+      "type": ["string", "null"]
+    },
+    "status": {
+      "type": "string"
+    },
+    "declineReason": {
+      "type": ["string", "null"]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "title",
+    "firstName",
+    "lastName",
+    "phoneNumber",
+    "email",
+    "role",
+    "position",
+    "organizationName",
+    "organizationAddress",
+    "organizationPostcode",
+    "organizationCountry",
+    "organizationBusiness",
+    "website",
+    "linkedin",
+    "researchGate",
+    "otherLink",
+    "status",
+    "declineReason",
+    "createdAt",
+    "updatedAt"
+  ],
+  "additionalProperties": false
+}

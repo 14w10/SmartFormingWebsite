@@ -1,0 +1,37 @@
+en:
+ errors:
+    author_id: must exists
+    attachable_id: must exists
+    attachable_type: must be valid file type
+    computation_form_exists?: has been already created computation form
+    computation_request_exists?: must exists
+    computation_request_files: must be as form files schemas
+    computation_request_result: must be present on finishing
+    computation_module_approved?: computation module must be approved
+    email?: must be email
+    email_uniq?: has been already taken by anoher user
+    decline_reason: must be present on decline
+    file_type_allowed?: must be *.matlab, *.py, *.doc, *.pdf
+    reject_reason: must be present on reject
+    name?: must contains only letters
+    titled?: must be mr, miss, doctor, professor
+    link?: must be link
+    organization_busineses_present?: must contain valid value
+    password_confirmation: must equals password
+    portfolio_module_exists?: must exists and be published
+    present?: must be filled
+    status_allowed?: must be allowed
+    signup_uniq?: has been already created signup request
+    steps: amount steps must be same as in form
+    title_uniq?: must be unique
+    name_uniq?: must be unique
+    computation_module_exists?: must exists
+    title_size?: must be not longer than 100 symbols
+    module_uid_uniq?: must be unique
+    module_uid_size?: must be 23 character long
+    user_exists?: must exists
+    confirmation_token_exists?: not found
+    status_may?: must be valid status for transition
+    verified_portfolio_module: must contains portfolio module
+    verification_portfolio_report: must contains portfolio report
+    category_can_not_be_removed: Category with assigned modules cannot be removed

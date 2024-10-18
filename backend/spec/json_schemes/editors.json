@@ -1,0 +1,7 @@
+{
+  "title": "List of editors",
+  "type": "array",
+  "items": {
+    "$ref": "editor.json"
+  }
+}

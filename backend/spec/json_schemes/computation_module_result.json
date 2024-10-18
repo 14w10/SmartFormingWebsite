@@ -1,0 +1,16 @@
+{
+  "title": "Computation module result",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "meta": {
+      "type": ["string", "null"]
+    }
+  },
+  "required": [
+    "id",
+    "meta"
+  ],
+  "additionalProperties": false
+}

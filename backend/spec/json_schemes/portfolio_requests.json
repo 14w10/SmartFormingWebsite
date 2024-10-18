@@ -1,0 +1,7 @@
+{
+  "title": "List of portfolio_requests",
+  "type": "array",
+  "items": {
+    "$ref": "portfolio_request.json"
+  }
+}

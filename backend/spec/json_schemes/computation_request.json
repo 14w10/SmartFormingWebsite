@@ -1,0 +1,73 @@
+{
+  "title": "Computation request details",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string"
+    },
+    "declineReason": {
+      "type": ["string", "null"]
+    },
+    "computationFormId": {
+      "type": ["integer", "null"]
+    },
+    "computationModuleId": {
+      "type": ["integer", "null"]
+    },
+    "computationModuleShortDescription": {
+      "type": ["string", "null"]
+    },
+    "computationModuleDescription": {
+      "type": ["string", "null"]
+    },
+    "computationModuleType": {
+      "type": ["string", "null"]
+    },
+    "computationModuleTitle": {
+      "type": ["string", "null"]
+    },
+    "computationResultId": {
+      "type": ["integer", "null"]
+    },
+    "processedAt": {
+      "type": ["string", "null"]
+    },
+    "finishedAt": {
+      "type": ["string", "null"]
+    },
+    "declinedAt": {
+      "type": ["string", "null"]
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "graphType": {
+      "type": ["string", "null"]
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "id",
+    "status",
+    "declineReason",
+    "computationFormId",
+    "computationModuleId",
+    "computationModuleShortDescription",
+    "computationModuleDescription",
+    "computationModuleTitle",
+    "processedAt",
+    "finishedAt",
+    "declinedAt",
+    "createdAt",
+    "updatedAt",
+    "meta"
+  ],
+  "additionalProperties": false
+}

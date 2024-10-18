@@ -1,0 +1,7 @@
+{
+  "title": "List of attachments",
+  "type": "array",
+  "items": {
+    "$ref": "attachment.json"
+  }
+}

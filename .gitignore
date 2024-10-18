@@ -1,0 +1,12 @@
+.env
+./backend/.env
+./frontend/.env
+.devcontainer
+./backend/.devcontainer
+
+./frontend/yarn.lock
+./frontend/package-lock.json
+node_modules/
+package-lock.json
+package.json
+db-data
